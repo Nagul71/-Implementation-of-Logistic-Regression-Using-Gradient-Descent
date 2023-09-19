@@ -109,6 +109,9 @@ def plotDecisionBoundary(theta,X,Y):
     plt.legend()
     plt.show()
 
+print("Decision boundary-graph for exam score:")
+plotDecisionBoundary(res.x,X,Y)
+
 
 prob=sigmoid(np.dot(np.array([1,45,85]),res.x))
 print(prob)
